@@ -2,7 +2,7 @@ import React from "react"
 import { BsFillCartPlusFill, BsFillBucketFill } from "react-icons/bs"
 import "./PerfumeCart.css"
 
-const PerfumeCart = ({ perfume }) => {
+const PerfumeCart = ({ perfume, handleAddToCart }) => {
 	return (
 		<div className="product">
 			<div className="img-container">
@@ -10,9 +10,12 @@ const PerfumeCart = ({ perfume }) => {
 			</div>
 			<h3>{perfume.name}</h3>
 			<p>price:{perfume.price}</p>
-			<button className="shopping-cart-btn">
-				Add to card{BsFillCartPlusFill}
-				{BsFillBucketFill}
+			<button
+				onClick={() => handleAddToCart(perfume)}
+				className="shopping-cart-btn"
+			>
+				Add to card
+				<BsFillCartPlusFill />
 			</button>
 		</div>
 	)
