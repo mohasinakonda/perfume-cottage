@@ -1,0 +1,21 @@
+.product {
+	border: 2px solid rgb(43, 42, 41);
+	border-radius: 10px;
+	position: relative;
+	height: 510px;
+}
+.shopping-cart-btn {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background-color: #0dcaf0;
+}
+.img-container {
+	width: 300px;
+	height: 300px;
+}
+
+.img-container img {
+	width: 100%;
+}

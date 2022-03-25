@@ -1,0 +1,19 @@
+.shop-container {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	background-color: azure;
+	gap: 10px;
+}
+.products-container {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+
+	/* border: 1px solid antiquewhite; */
+}
+.products-container img {
+	width: 300px;
+	height: 300px;
+}
