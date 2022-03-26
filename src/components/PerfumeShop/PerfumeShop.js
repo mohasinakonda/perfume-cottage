@@ -7,7 +7,7 @@ import "./PerfumeShop.css"
 const PerfumeShop = () => {
 	const [perfumes, setPerfume] = useState([])
 	let [cart, setCart] = useState([])
-	const [empty, setEmpty] = useState([])
+
 	useEffect(() => {
 		fetch("products.json")
 			.then((res) => res.json())
@@ -38,10 +38,10 @@ const PerfumeShop = () => {
 		setCart([])
 	}
 	return (
-		<div>
+		<div className="container-fluid">
 			<Header />
-			<div className="shop-container row container">
-				<div className="products-container row col-9 g-5 container">
+			<div className=" row m-3 ">
+				<div className=" row col-lg-9 align-items-center justify-content-center">
 					{perfumes.map((perfume) => (
 						<PerfumeCart
 							key={perfume.id}
@@ -55,7 +55,6 @@ const PerfumeShop = () => {
 					selectMeBtnHandle={selectMeBtnHandle}
 					tryAgainHandle={tryAgainHandle}
 				/>
-				{/* <h2 className="col-3">cart</h2> */}
 			</div>
 		</div>
 	)
