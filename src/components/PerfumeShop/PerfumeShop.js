@@ -3,6 +3,7 @@ import { useState } from "react"
 import Cart from "../Cart/Cart"
 import Header from "../Header/Header"
 import PerfumeCart from "../PerfumeCart/PerfumeCart"
+import QuesAndAns from "../quesAndAns/QuesAndAns"
 import "./PerfumeShop.css"
 const PerfumeShop = () => {
 	const [perfumes, setPerfume] = useState([])
@@ -56,6 +57,7 @@ const PerfumeShop = () => {
 					tryAgainHandle={tryAgainHandle}
 				/>
 			</div>
+			<QuesAndAns />
 		</div>
 	)
 }
