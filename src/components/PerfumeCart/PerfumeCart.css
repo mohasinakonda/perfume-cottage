@@ -10,6 +10,7 @@
 	position: absolute;
 	bottom: 0;
 	background-color: #0dcaf0;
+	margin-left: -30px;
 }
 .img-container {
 	width: 300px;

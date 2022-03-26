@@ -1,15 +1,15 @@
-.shop-container {
+/* .shop-container {
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	background-color: azure;
 	gap: 10px;
-}
+} */
 .products-container {
-	width: 90%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	/* width: 90%;
+	margin: 0 auto; */
+	/* display: grid; */
+	/* grid-template-columns: repeat(3, 1fr);
+	gap: 20px; */
 
 	/* border: 1px solid antiquewhite; */
 }
