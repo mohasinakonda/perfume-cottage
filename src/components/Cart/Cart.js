@@ -7,11 +7,8 @@ const Cart = ({ cart, tryAgainHandle, selectMeBtnHandle }) => {
 		<div className="cart col-lg-3 col-sm-12 ">
 			<h4>selected Products</h4>
 			{cart?.map((data) => (
-				<div
-					key={data.id}
-					className="d-flex align-items-center justify-content-center m-2"
-				>
-					<img className="w-25 " src={data.img} alt="" />
+				<div key={data.id} className="d-flex align-items-center  m-2">
+					<img className="w-25 img-fluid " src={data.img} alt="" />
 					<p key={data.id}>{data?.name}</p>
 				</div>
 			))}
